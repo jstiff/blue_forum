@@ -1,24 +1,26 @@
-import Layout from '../components/Layout'
-import Image from 'next/image'
-import Link from 'next/link'
+import Layout from "../components/Layout";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
-
   return (
     <Layout>
-        <h1 className='is-size-2 is-size-4-mobile'>Discussbase</h1>
-        <h2 className='is-size-4 mb-5'>An open-source forum <br></br>
-          Create your discussion platform and deploy it completely free,
-        Using &ldquo;Seven-stack&rdquo; (Supabase, Vercel and Next.js).
-        Simplicity first. Focus on your discussion
+      <h1 className="is-size-2 is-size-4-mobile">OpenBlue forum</h1>
+      <h2 className="is-size-4 mb-5">
+        A forum for hands on builders of all types <br></br>
+        Create a discussion around a project you are working on.
       </h2>
 
       <div>
-        <Link href='/posts'><button className="button is-outlined mr-1">Try It</button></Link>
-        <Link href='https://docs-discussbase.vercel.app/'><button className="button is-outlined">Read Documentation</button></Link>
+        <Link href="/posts">
+          <button className="button is-outlined mr-1">Try It</button>
+        </Link>
+        <Link href="https://docs-discussbase.vercel.app/">
+          <button className="button is-outlined">Read Documentation</button>
+        </Link>
       </div>
 
-        <div className='columns mt-6'>
+      {/* <div className='columns mt-6'>
           <div className='column'>
             <figure className='image is-64x64'>
               <Image width='64' height='64' className='is-rounded' src='https://pbs.twimg.com/profile_images/1397471927132844033/jN-wuufb_400x400.jpg' alt='supabase logo'/>
@@ -42,10 +44,9 @@ export default function Home() {
             <h3 className='mt-1 is-size-4'><a href='https://nextjs.org/'> Nextjs</a></h3>
             <p>Next.js gives you the best developer experience with all the features you need for production.</p>
           </div>
-        </div>
+        </div> */}
 
-      <a className="github-button" href="https://github.com/hilmanski/discussbase" data-color-scheme="no-preference: dark; light: dark; dark: dark_dimmed;" data-size="large" data-show-count="true" aria-label="Star hilmanski/discussbase on GitHub">Star on Github</a>
       <script async defer src="https://buttons.github.io/buttons.js"></script>
     </Layout>
-  )
+  );
 }
